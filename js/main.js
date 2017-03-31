@@ -1,3 +1,30 @@
+$(document).ready(function(){
+
+var writing = { "posts":[
+    {"title":"20 Awe-Inspiring Codepen Examples You Can Learn From<span class='new'>NEW</span>", "link":"http://www.j-w-v.com/writing/index.php/20-awe-inspiring-codepen-examples-you-can-learn-from"}, 
+    {"title":"Hero Images & 20 Free Places To Find Them", "link":"https://www.j-w-v.com/writing/index.php/hero-images-20-free-places-to-find-them"}, 
+    {"title":"18 Mobile First CSS Frameworks", "link":"https://www.j-w-v.com/writing/index.php/18-mobile-first-css-frameworks"}, 
+    {"title":"How I Grew As A JavaScript Developer", "link":"https://www.j-w-v.com/writing/index.php/how-i-grew-as-a-javascript-developer"}, 
+    {"title":"CSS's undersung property: box-sizing", "link":"https://www.j-w-v.com/writing/index.php/css-s-undersung-property-box-sizing"}, 
+    //{"title":"25 'Learn To Code' Focused YouTube channels", "link":"https://www.j-w-v.com/writing/index.php/25-learn-to-code-focused-youtube-channels"}
+]
+}
+  
+
+for (var i = 0; i < writing.posts.length; i++) { 
+    $('.posts ul').append('<li><a href="' + writing.posts[i].link +'">' + writing.posts[i].title);
+    }
+
+
+$.getJSON("https://cpv2api.herokuapp.com/pens/showcase/j-w-v", function(resp){
+  if(resp.success){
+    for (var i = 0; i < 5; i++) { 
+    $('.pens ul').append('<li><a target="_blank" href="' + resp.data[i].link +'">' + resp.data[i].title + ' <span> ' +resp.data[i].views+ ' views</span> </a></li>');
+    }
+  }
+}); 
+
+
 particlesJS("particles-js", {
   "particles": {
     "number": {
@@ -107,4 +134,6 @@ particlesJS("particles-js", {
     }
   },
   "retina_detect": true
+});
+ 
 });
