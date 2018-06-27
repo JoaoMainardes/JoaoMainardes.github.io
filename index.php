@@ -8,7 +8,6 @@
 		<title>Joao Mainardes - Digital Marketing Specialist</title>
 
 		<meta name="description" content="Personal site of Joao Mainardes, Digital Marketing Specialist in Miami."/>
-
 		<meta property="og:locale" content="en_US" />
 		<meta property="og:type" content="website" />
 		<meta property="og:title" content="Joao Mainardes" />
@@ -16,7 +15,6 @@
 		<meta property="og:url" content="https://joaomainardes.com" />
 		<meta property="og:site_name" content="Joao Mainardes" />
 		<meta property="og:image" content="https://joaomainardes.com/img/preview.jpg" />
-
 		<meta name="twitter:card" content="summary_large_image">
 		<meta name="twitter:site" content="@joaomainardes">
 		<meta name="twitter:creator" content="@joaomainardes">
@@ -63,13 +61,6 @@
 
 	</body>
 		<script type="text/javascript" src="js/scripts.js"></script>
-<script type="text/javascript">
-<!--
-if (screen.width <= 700) {
-document.location = "mobile.html";
-}
-//-->
-</script>
 	
 	<script>
 	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
