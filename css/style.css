@@ -2,6 +2,7 @@ article,aside,details,figcaption,figure,footer,header,hgroup,main,nav,section,su
 @media (min-width: 500)
        h1
        {
-           font-size:6rem!important;
+    font-size:5rem!important;
+    line-height: 5rem!important;
        }
     }
