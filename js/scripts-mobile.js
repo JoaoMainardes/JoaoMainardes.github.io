@@ -2322,7 +2322,7 @@ Menu.prototype =
 		if(!this._active)
 		{
 			this._clearActive(true);
-			this._loadImg("/img/leo-cheron.jpg");
+			this._loadImg("/img/joao.jpg");
 		}
 	},
 
